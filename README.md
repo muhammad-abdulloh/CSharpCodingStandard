@@ -5,11 +5,11 @@
 Menu
 
 - [O'zgaruvchilar](Variables.md)
-- Kommentariyalar
+- [Kommentariyalar](Comments.md)
 - [Funktsiyalar](Methods.md)
-- Interfeyslar
+- [Interfeyslar](Interfaces.md)
 - [Sinflar](Classes.md)
-- Enumlar
-- Structuralar
-- Istisnolar
+- [Enumlar](Enums.md)
+- [Structuralar](Structs.md)
+- [Istisnolar](Exceptions.md)
 <!-- - Solution Organization -->
