@@ -1,6 +1,6 @@
-# C# Dasturlash tilida code yozish me'yorlari ✅
+# C# Dasturlash tilida kod yozish me'yorlari ✅
 
-### C# da ko'dlash uslublari uchun ko'rsatmalar.
+### C# da kodlash uslublari uchun ko'rsatmalar.
 <br/>
 Menu
 
