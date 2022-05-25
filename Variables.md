@@ -54,5 +54,26 @@ var studentObj = new Student();
 ```
 <br />
 
+#### 0.0.3 Null yoki Odatiy hol uchun nomlanish uslublari
+Agar o'zgaruvchan qiymat odatiy bo'lsa, masalan ```int``` uchun ```0``` yoki ```string``` uchun ```null``` va siz bu qiymatni o'zgartirishni rejalashtiryapsiz (misol uchun sinash maqsadida) keyin nom ushbu qiymatni aniqlashi kerak.
+##### Tavsiya etiladi
+```cs
+Student noStudent = null;
+```
+##### Tavsiya etilmaydi
+```cs
+Student student = null;
+```
+##### Doim tavsiya etiladi
+```cs
+int noChangeCount = 0;
+```
 
+##### Umuman tavsiya etilmaydi
+```cs
+int changeCount = 0;
+```
+<br /> <br />
+
+### 0.1 O'zgaruvchilarni e'lon qilish
 
