@@ -76,4 +76,28 @@ int changeCount = 0;
 <br /> <br />
 
 ### 0.1 O'zgaruvchilarni e'lon qilish
+O'zgaruvchilarni e'lon qilish va uni instansiyalash, hatto qiymat keyinroq aniqlanishi kerak bo'lsa ham, o'zgaruvchining bevosita turini ko'rsatishi kerak.
 
+#### 0.1.0 Toza tiplar
+Agar o'ng tomonning tipi **aniq bo'lmasa**, keyin o'zgaruvchingizni e'lon qilish uchun ```var``` dan foydalaning.
+##### Tavsiya etiladi
+```cs
+var student = new Student();
+```
+##### Tavsiya etilmaydi
+```cs
+Student student = new Student();
+````
+<br />
+
+#### 0.1.1 Yarim toza tiplar
+Qaytarilgan qiymat turining o'ng tomoni **aniq bo'lsa**, u holda siz o'z o'zgaruvchingizni uning turi bilan aniq e'lon qilishingiz kerak.
+##### Tavsiya etiladi
+```cs
+Student student = GetStudent();
+```
+##### Tavsiya etilmaydi
+```cs
+var student = GetStudent();
+```
+<br />
