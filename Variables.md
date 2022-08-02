@@ -38,7 +38,7 @@ var studentList = new List<Student>();
 ```
 <br />
 
-#### 0.0.2 Tiplarning nomlanish uslublari
+#### 0.0.2 Nomga tipni elon qilish
 
 ##### Tavsiya etiladi
 ```cs
