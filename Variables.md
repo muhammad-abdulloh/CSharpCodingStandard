@@ -101,3 +101,68 @@ Student student = GetStudent();
 var student = GetStudent();
 ```
 <br />
+
+
+#### 0.1.2 Toza bo'lmagan tiplar 
+Qaytarilgan qiymat turining o'ng tomoni aniq va noma'lum bo'lsa (masalan, anonim turlar), o'zgaruvchi turi sifatida ```var``` dan foydalanishingiz mumkin.
+##### Tavsiya etiladi
+```cs
+var student = new
+{
+    Name = "Muhammadabdulloh",
+    Score = 100
+};
+```
+<br /> <br />
+
+### 0.2 Tashkillashtirish
+
+#### 0.2.0 Sindirish
+Agar o'zgaruvchilar deklaratsiyasi 120 belgidan oshsa, uni tenglik belgisidan boshlab ajrating(sindiring yoxud ikkinchi qatorga olib tushing).
+
+##### Tavsiya etiladi
+```cs
+List<Student> washingtonSchoolsStudentsWithGrades = 
+    await GetAllWashingtonSchoolsStudentsWithTheirGradesAsync();
+```
+##### Tavsiya etilmaydi
+```cs
+List<Student> washgintonSchoolsStudentsWithGrades = await GetAllWashingtonSchoolsStudentsWithTheirGradesAsync();
+```
+<br />
+
+#### 0.2.1 Bir nechta deklaratsiyalar
+Ikki yoki undan ortiq satrni egallagan deklaratsiyalar oldingi va keyingi oʻzgaruvchilar deklaratsiyasidan ajratish uchun ulardan oldin va keyin yangi qatorga ega boʻlishi kerak.
+
+##### Tavsiya etiladi
+```cs
+Student student = GetStudent();
+
+List<Student> washingtonSchoolsStudentsWithGrades = 
+    await GetAllWashingtonSchoolsStudentsWithTheirGradesAsync();
+
+School school = await GetSchoolAsync();
+```
+
+##### Tavsiya etilmaydi
+```cs
+Student student = GetStudent();
+List<Student> washgintonSchoolsStudentsWithGrades = 
+    await GetAllWashingtonSchoolsStudentsWithTheirGradesAsync();
+School school = await GetSchoolAsync();
+```
+Bundan tashqari, faqat bitta satrdan iborat o'zgaruvchilar deklaratsiyasida ular orasida yangi qatorlar bo'lmasligi kerak.
+
+##### Tavsiya etiladi
+```cs
+Student student = GetStudent();
+School school = await GetSchoolAsync();
+```
+
+##### Tavsiya etilmaydi
+```cs
+Student student = GetStudent();
+
+School school = await GetSchoolAsync();
+```
+<br />
