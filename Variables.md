@@ -78,7 +78,7 @@ int changeCount = 0;
 ### 0.1 O'zgaruvchilarni e'lon qilish
 O'zgaruvchilarni e'lon qilish va uni instansiyalash, hatto qiymat keyinroq aniqlanishi kerak bo'lsa ham, o'zgaruvchining bevosita turini ko'rsatishi kerak.
 
-#### 0.1.0 Toza tiplar
+#### 0.1.0 Aniq tiplar
 Agar o'ng tomonning tipi **aniq bo'lmasa**, keyin o'zgaruvchingizni e'lon qilish uchun ```var``` dan foydalaning.
 ##### Tavsiya etiladi
 ```cs
@@ -90,7 +90,7 @@ Student student = new Student();
 ````
 <br />
 
-#### 0.1.1 Yarim toza tiplar
+#### 0.1.1 Aniq bo'lmagan tiplar
 Qaytarilgan qiymat turining o'ng tomoni **aniq bo'lsa**, u holda siz o'z o'zgaruvchingizni uning turi bilan aniq e'lon qilishingiz kerak.
 ##### Tavsiya etiladi
 ```cs
@@ -103,7 +103,7 @@ var student = GetStudent();
 <br />
 
 
-#### 0.1.2 Toza bo'lmagan tiplar 
+#### 0.1.2 Aniq bo'lmagan tiplar 
 Qaytarilgan qiymat turining o'ng tomoni aniq va noma'lum bo'lsa (masalan, anonim turlar), o'zgaruvchi turi sifatida ```var``` dan foydalanishingiz mumkin.
 ##### Tavsiya etiladi
 ```cs
@@ -117,7 +117,7 @@ var student = new
 
 ### 0.2 Tashkillashtirish
 
-#### 0.2.0 Sindirish
+#### 0.2.0 Keyingi qatorga o'tkazish
 Agar o'zgaruvchilar deklaratsiyasi 120 belgidan oshsa, uni tenglik belgisidan boshlab ajrating(sindiring yoxud ikkinchi qatorga olib tushing).
 
 ##### Tavsiya etiladi
