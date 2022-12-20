@@ -6,7 +6,8 @@
 [Version 0.8]
 
 <br/>
-#### Bo'limlar
+
+<H4>Bo'limlar</H4>
 
 - [0. Fayllar](0.%20Files.md)
 - [1. Izohlar & Sharhlar](1.%20Comments%20and%20Documentation.md)
